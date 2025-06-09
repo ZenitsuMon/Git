@@ -1,5 +1,5 @@
 # **Linear Regression**:
-
+_________________
 **Mục đích**: Tìm ra một công thức có độ chính xác cao để có thể dự đoán được y khi có x
 
 **Công thức đơn giản**: f(x) = y = ax+b có thể mở rộng lên nhiều ẩn hơn, cơ bản là 2 ẩn y: dependent variable, cũng có nhiều tên khác như output variables
@@ -12,9 +12,9 @@
 
 **Công thức tổng quát**: dependent = constant + parameter*independent + ...
 
-Để tìm ra đường phù hợp thì phải tính tổng bình phương của khoảng cách từ điểm data chính xác đến điểm data dự đoán gọi là SS(fit) (Khoảng cách từ điểm data chính xác đến điểm data dự đoán gọi là residual)
+*Để tìm ra đường phù hợp thì phải tính tổng bình phương của khoảng cách từ điểm data chính xác đến điểm data dự đoán gọi là SS(fit) (Khoảng cách từ điểm data chính xác đến điểm data dự đoán gọi là residual)*
 
-Và cuối cùng đường thẳng phù hơp nhất là đường thẳng có SUM(residual) nhỏ nhất
+*Và cuối cùng đường thẳng phù hơp nhất là đường thẳng có SUM(residual) nhỏ nhất*
 
 **Slope**: Độ dốc của đường thẳng dựa vào a (hệ số trước x)
 
@@ -30,3 +30,13 @@ Lúc trước em có tìm hiểu sơ qua về linear progression trong ML thì p
 
 Mình sẽ dùng train để tìm ra công thức phù hợp rồi dùng test để test độ chính xác
 
+# **Sum of squares**:
+____________________
+
+Có 3 loại: **SST** (Sum of total), **SSR** (Sum of regression), **SSE** (Sum of error)
+### SST (TSS):
+- Là tổng bình phương khoảng cách từ điểm data quan sát đến điểm data trung bình *(Observed và Mean)*
+### SSR (ESS):
+- Là tổng bình phương khoảng cách từ điểm data phù hợp đến điểm data trung bình *(Fit và Mean)*, cho biết độ chính xác của đường thẳng phù hợp *(Fit line)*, ***Nếu SSR = SST thì regression của mình hoàn hảo***
+### SSE [RSS, SSR(Sum of residual)]:
+- Là tổng bình phương khoảng cách từ điểm data quan sát đến điểm data phù hợp *(Observed và Fit)*, cho biết độ lỗi của regression, ***SSE càng nhỏ thì regression càng chính xấc***
