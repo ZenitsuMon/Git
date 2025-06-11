@@ -5,4 +5,4 @@ while True:
     if word =="":
         break
     
-    print(str(list(dictionary.meaning(word))))
+    print(dictionary.meaning(word))
