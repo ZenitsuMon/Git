@@ -51,6 +51,8 @@
 *Khi mà tìm ra được fit line, dùng công thức gì để tính độ chính xác của nó?:*
 	
 >      -> [SS(mean) - SS(fit)]/SS(mean)
+>
+> SS(fit) = [(170-170)^2+(175-175)^2+(160-163,75)^2] = 14.06
 
 **Tiếp theo sẽ đến giai đoạn test**
 	
