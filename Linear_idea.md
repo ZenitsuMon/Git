@@ -1,6 +1,7 @@
 **Tạo data set**
 
- >     -> Phải có một danh sách những dữ liệu, và DV,IV phải là những dữ liệu theo cặp 
+ >     -> Phải có một danh sách những dữ liệu, và DV,IV phải là những dữ liệu theo cặp
+ > Tạo dataset gồm DV là height(cm), IV là weight(kg), dataset = {1: {"height": 170, "weight": 60}, 2: {"height": 175, "weight": 68}, 3: {"height": 160, "weight": 50}
 
 **Tìm fit line**
 	
@@ -13,11 +14,20 @@
 >      *Làm sao để biết công thức nào thỏa mãn nhiều dữ liệu nhất?*
 >	      
 >     -> Mình đang sử dụng công thức y=ax+b, em sẽ chọn 2 dữ liệu để thay vào công thức (chọn ngẫu nhiên, nhưng phải dùng hết tất cả dữ liệu), giải hệ phương trình 2 ẩn, tìm ra a,b.
+> y=ax+b, thay dữ liệu 1 vào => 170=60a+b (1)
+> 
+> y=ax+b, thay dữ liệu 2 vào => 175=68a+b (2)
+> 
+> => a=0.625 ; y=132.5
+> 
+> => y=0.625x+132.5 (3)
 
 **Tìm đường fit line**
 	
 >     Lặp lại việc này sẽ giúp mình có rất nhiều công thức y=ax+b, lúc này ta sẽ chọn dữ liệu IV để thay vào các công thức, tìm ra những dữ liệu DV fit, so sánh với lại dữ liệu DV observed, tìm ra công thức có nhiều DV fit gần bằng với DV observed nhất, sau đó điều chỉnh lại công thức
->  	
+>
+> Thay "weight" của dữ liệu 3 vào (3): => y=163,75
+> 
 >     *Điều chỉnh lại công thức kiểu gì?*
 >	
 >     -> Phải điều chỉnh lại a,b
@@ -31,7 +41,13 @@
 >      *Đo khoảng cách từ đường đến điểm dữ liệu thì sẽ dùng Sum of Squares:*
 >	
 >      -> Công thức: [x(i)-x(mean)]^2 +....
->	
+>
+> Giả sử fit line của mình là pt(3), tìm SS(mean)
+>
+> x(mean) = (170+160+175)/3 = 168,3
+>
+> SS(mean) = [(170-168,3)^2+(175-168,3)^2+(160-168,3)^2] = 116.67
+> 
 *Khi mà tìm ra được fit line, dùng công thức gì để tính độ chính xác của nó?:*
 	
 >      -> [SS(mean) - SS(fit)]/SS(mean)
