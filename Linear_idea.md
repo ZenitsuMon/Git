@@ -62,6 +62,12 @@
 > 
 >	
  >      -> Tự tạo ra những dữ liệu mới lạ, công thức chưa gặp được, lặp lại qui trình test r sửa
+>
+> Tạo ra thêm 3 data, dataset2 = {4: {"height": 150, "weight": 40}, 5: {"height": 172, "weight": 73}, 6: {"height": 168, "weight": 58}
+>
+> Test: (4) -> "height" = 157.5 ; (5) -> "height" = 178.125 ; (6) -> "height" = 168.75
+>
+> Bây giờ mình đã có những **Fit data** và **Observed data** mới, phải sửa lại công thức
 	
  *Tự tạo ra những dữ liệu mới bằng cách gì?, tại sao phải tạo ra những dữ liệu mới?:*
 	
