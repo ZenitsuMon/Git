@@ -26,7 +26,7 @@
 	
 >     Lặp lại việc này sẽ giúp mình có rất nhiều công thức y=ax+b, lúc này ta sẽ chọn dữ liệu IV để thay vào các công thức, tìm ra những dữ liệu DV fit, so sánh với lại dữ liệu DV observed, tìm ra công thức có nhiều DV fit gần bằng với DV observed nhất, sau đó điều chỉnh lại công thức
 >
-> Thay "weight" của dữ liệu 3 vào (3): => y=163,75
+> Thay "weight" của dữ liệu 3 vào (3): => y=163.75
 > 
 >     *Điều chỉnh lại công thức kiểu gì?*
 >	
@@ -44,15 +44,17 @@
 >
 > Giả sử fit line của mình là pt(3), tìm SS(mean)
 >
-> x(mean) = (170+160+175)/3 = 168,3
+> x(mean) = (170+160+175)/3 = 168.3
 >
-> SS(mean) = [(170-168,3)^2+(175-168,3)^2+(160-168,3)^2] = 116.67
+> SS(mean) = [(170-168.3)^2+(175-168.3)^2+(160-168.3)^2] = 116.67
 > 
 *Khi mà tìm ra được fit line, dùng công thức gì để tính độ chính xác của nó?:*
 	
 >      -> [SS(mean) - SS(fit)]/SS(mean)
 >
-> SS(fit) = [(170-170)^2+(175-175)^2+(160-163,75)^2] = 14.06
+> SS(fit) = [(170-168.3)^2+(175-168.3)^2+(163.75-168.3)^2] = 68.48
+>
+> R^2 = (116.67-68.48)/116.67 = 0,41 -> Độ chính xác khoảng 41% *(Dựa vào 3 data)*
 
 **Tiếp theo sẽ đến giai đoạn test**
 	
